@@ -1,4 +1,4 @@
-#Part 3: Starting with Questions
+# Part 3: Starting with Questions
 
 This database provides data on revenue by product as well as data on how each visitor to the site interacted with the products (when they visited, where they were based, how many pages they viewed, how long they stayed on the site, and the number of transactions they entered).
 
