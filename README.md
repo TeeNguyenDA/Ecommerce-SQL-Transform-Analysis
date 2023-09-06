@@ -1,4 +1,4 @@
-# Final-Project-Transforming-and-Analyzing-Data-with-SQL
+# Final SQL Project: Transforming and Analyzing Data Using POSTGRESQL
 
 ## Project/Goals
 
