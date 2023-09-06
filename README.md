@@ -1,4 +1,4 @@
-# Final SQL Project: Transforming and Analyzing Data Using POSTGRESQL
+# Final SQL Project: Transforming and Analyzing Data Using Postgresql
 
 ## Project/Goals
 
@@ -14,8 +14,28 @@ This ecommerce dataset is probably a demo database from the Google Merchandise S
 Given 5 separate datasets (`all_sessions`, `analytics`, `products`, `sales_by_sku`, `sales_report`), our goal is to create a new PostgreSQL database called `ecommerce` by setting up tables and importing data into the tables for each .csv file. Then, we will perform data cleaning and transformation on the `ecommerce` database prior to answering any possible business problems in the dataset.
 
 ## Process
-### 1. Understand the data
+
+### 1. Import and clean the database
+
 ### 2. Clean and transform the data: 
+
 - In the following sequence of the tables: `all_sessions`, `analytics`, `products`, `sales_by_sku`, `sales_report`
-### 3. Answer questions and reflect on further business questions that may arise
-### 4. Construct the QA process
+- Cleaning with business in mind!
+- The overall approach to clean the data across the 5 tables in the ecommerce database, table by table:
+-- Remove irrelevant, duplicated data (full / partial duplicate)
+-- Fix structural errors
+-- Do type conversion
+-- Handle missing 
+-- Fill in missing data if any
+  
+### 3. Starting with questions
+
+- Answer a given set of questions to provide queries and explanations
+- 
+### 4. Starting with data
+
+- Self-construct a set of questions related to the data, provide queries and explanations
+
+### 5. Create the ERD schema using Postgresql
+
+### 6. Describe the QA process with queries and explanations
