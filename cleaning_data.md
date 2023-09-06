@@ -1,9 +1,5 @@
 # Part 1 and 2: Loading csv Files into Database and Cleaning the data
 
-## Introduction:
-
-Given 5 separate datasets (`all_sessions`, `analytics`, `products`, `sales_by_sku`, sales_report), our goal is to create a new PostgreSQL database called `ecommerce` by setting up tables and importing data into the tables for each .csv file. Then, we will perform data cleaning and transformation on the `ecommerce` database prior to answering any possible business problems in the dataset.
-
 ### Section 1: Loading csv Files into Database
 
 The first step involves filtering and combining the datasets into a single workable format for analysis:
