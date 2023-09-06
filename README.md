@@ -31,7 +31,7 @@ Given 5 separate datasets (`all_sessions`, `analytics`, `products`, `sales_by_sk
 ### 3. Starting with questions
 
 - Answer a given set of questions to provide queries and explanations
-- 
+
 ### 4. Starting with data
 
 - Self-construct a set of questions related to the data, provide queries and explanations
