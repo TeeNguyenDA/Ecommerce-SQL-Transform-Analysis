@@ -1,10 +1,10 @@
-#Part 1 and 2: Loading csv Files into Database and Cleaning the data
+# Part 1 and 2: Loading csv Files into Database and Cleaning the data
 
-##Introduction:
+## Introduction:
 
 Given 5 separate datasets (`all_sessions`, `analytics`, `products`, `sales_by_sku`, sales_report), our goal is to create a new PostgreSQL database called `ecommerce` by setting up tables and importing data into the tables for each .csv file. Then, we will perform data cleaning and transformation on the `ecommerce` database prior to answering any possible business problems in the dataset.
 
-###Section 1: Loading csv Files into Database
+### Section 1: Loading csv Files into Database
 
 The first step involves filtering and combining the datasets into a single workable format for analysis:
 
@@ -13,7 +13,7 @@ The first step involves filtering and combining the datasets into a single worka
 We haven't set up the constraints and the keys at this stage, because there are some messy missing data and duplicates in some of the unique identifier columns.
 
 
-###Section 2: Data Cleaning and Transforming
+### Section 2: Data Cleaning and Transforming
 
 The overall approach to clean the data across our 5 tables:
 
@@ -24,7 +24,7 @@ The overall approach to clean the data across our 5 tables:
 
 Let's perform the data cleaning process!
 
-1. Clean and transform the `all_sessions` table
+**1. Clean and transform the `all_sessions` table**
 
 Before deciding to drop any irrelevant or missing data, it's better to summarize how many values there are in `all_sessions`.
 
@@ -314,7 +314,7 @@ SET eCommerceAction_option = CASE
 							 END;
 ```
 
-2. Clean and transform the `analytics` table
+**2. Clean and transform the `analytics` table**
 
 We'll make a summary table of how many values there are (columns with all NULL values not included) in the `analytics` table prior to any futher study and data cleaning steps.
 
@@ -496,7 +496,7 @@ NOT IN (
 ```
 We might have not set the primary key for this table yet, but the composite key using (fullVisitorId, channelGrouping, visitId) seems to be a good candidate. They can be used to find connection with the `all_sessions` table.
 
-3. Clean and transform the `products` table
+**3. Clean and transform the `products` table**
 
 A summary table of how many values there are (columns with all NULL values not included) in the `products` table prior to any futher study and data cleaning steps:
 
@@ -541,9 +541,9 @@ UPDATE products
    SET productname = REGEXP_REPLACE(productname, '(^\s+)', '');
 ```
 
-4. No cleaning needed for the `sales_by_sku` table
+**4. No cleaning needed for the `sales_by_sku` table**
 
-5. Clean and transform the `sales_report` table
+**5. Clean and transform the `sales_report` table**
 
 This table is pretty clean already with repeated columns probally drawn from the `products` and `sales_report` tables. We just need to change minor details in the `name` colum as we performed in the previous ones.
 
