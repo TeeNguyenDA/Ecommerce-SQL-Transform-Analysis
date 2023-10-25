@@ -1,4 +1,4 @@
-# Final SQL Project: Transforming and Analyzing Data Using Postgresql
+# Final SQL Project: E-commerce Transforming and Analyzing Data Using Postgresql
 
 ## Project/Goals
 
